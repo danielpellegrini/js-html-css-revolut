@@ -14,8 +14,11 @@ a {
 }
 
 nav {
+  position: relative;
   max-width: 86rem;
   margin: 0 auto;
+  padding: 0 50px;
+
 }
 
 .navbar {
@@ -23,16 +26,14 @@ nav {
   justify-content: space-between;
   background-color: inherit;
   color: inherit;
-  height: 150px;
-  line-height: 150px;
-}
-
-.left, .right {
-  margin: 0 50px;
+  padding: 2.5rem 0;
+  align-items: center;
+  /* height: 150px;
+  line-height: 150px; */
 }
 
 .active {
-  opacity: 1; 
+  opacity: 1;
 }
 
 button {
@@ -45,7 +46,7 @@ button {
   transition: 0.5s;
 }
 
-.right > button:nth-child(6) {
+.right > button:last-child {
   margin-left: 10px;
   background-color: #111;
   color: #fff;
@@ -54,4 +55,43 @@ button {
 button:hover {
   opacity: 0.6;
   transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.5) 0px 8px 16px 0px;
+}
+
+.dropdown-container {
+  /* display: none; */
+  position: absolute;
+  right: 0;
+  width: 800px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 4px 0px, rgba(0, 0, 0, 0.09) 0px 8px 16px 0px;
+  border-radius: 10px;
+  margin: 0 50px;
+  padding: 10px;
+  color: #CED5DB;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  width: 20%;
+  height: 80%
+}
+
+.icon-container {
+  display: inline-block;
+  width: 25px;
+  padding: 3px;
+  margin: 5px;
+  background-color: #CED5DB;
+  border-radius: 50%;
+  color: inherit;
+}
+
+.icon-container > img {
+  vertical-align: middle;
+  filter: invert();
+}
+header > span {
+  text-transform: uppercase;
+  font-size: 0.7rem;
 }
