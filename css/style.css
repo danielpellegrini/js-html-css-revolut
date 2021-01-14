@@ -28,8 +28,6 @@ nav {
   color: inherit;
   padding: 2.5rem 0;
   align-items: center;
-  /* height: 150px;
-  line-height: 150px; */
 }
 
 .active {
@@ -68,13 +66,18 @@ button:hover {
   border-radius: 10px;
   margin: 0 50px;
   padding: 10px;
+}
+
+.dropdown-content > header > span {
+  background-color: inherit;
   color: #CED5DB;
   font-weight: bold;
 }
 
 .dropdown-content {
-  width: 20%;
-  height: 80%
+  display: flex;
+  width: auto;
+  height: 80%;
 }
 
 .icon-container {
@@ -89,9 +92,13 @@ button:hover {
 
 .icon-container > img {
   vertical-align: middle;
-  filter: invert();
+  filter: invert(1);
 }
 header > span {
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.7em;
+}
+
+.features > section {
+  line-height: 2.5em;
 }
