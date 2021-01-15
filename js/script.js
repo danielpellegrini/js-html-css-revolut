@@ -1,7 +1,17 @@
 $(document).ready(function() {
 
-  $('.right > a:first-child').click(function(event) {
+  $('.features > a:first-child').click(function(event) {
     $('.dropdown-container').toggle();
+    $(this).hover(function(event) {
+      $('.dropdown-container').toggle();
+    });
+  });
+
+  $('.plans > a:first-child').click(function(event) {
+    $('.dropdown-container-small').toggle();
+    $(this).hover(function(event) {
+      $('.dropdown-container-small').toggle();
+    });
   });
 
 });
