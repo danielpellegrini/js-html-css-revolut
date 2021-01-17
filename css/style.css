@@ -1,125 +1,174 @@
+/* COMMON CLASSES */
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-size: 100%;
 }
 
-/* .active {
-  display: block;
-} */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 a {
   background-color: transparent;
   text-decoration: none;
   color: inherit;
-  padding: 0 20px;
-  opacity: 0.5;
 }
 
-nav {
-  max-width: 86rem;
-  margin: 0 auto;
+.flex {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.no-decoration-text {
+  text-decoration: none;
+}
+
+.extra-opacity {
+  opacity: 0.2;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.special-li {
+  padding-top: 10px;
+  display: inline-block;
   position: relative;
 }
 
-a:hover {
-  opacity: 1;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
+.coming-soon {
+  color: #93BCF6;
   background-color: inherit;
-  color: inherit;
-  padding: 2.5rem 0;
-  align-items: center;
-}
-
-.active-opacity {
-  opacity: 1;
-}
-
-button {
-  font-weight: bold;
-  padding: 15px 25px;
-  border-radius: 10px;
-  border: none;
-  outline-width: 0;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.features>button:last-child {
-  margin-left: 10px;
-  background-color: #111;
-  color: #fff;
-}
-
-button:hover {
-  opacity: 0.6;
-  transition: 0.5s;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.5) 0px 8px 16px 0px;
-}
-
-.features, .plans, .about, .help {
-  display: inline-block;
-  /* position: relative; */
-}
-
-.dropdown-container {
-  display: none;
+  font-size: 8px;
   position: absolute;
-  right: 0;
-  width: 800px;
-  height: 300px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 4px 0px, rgba(0, 0, 0, 0.09) 0px 8px 16px 0px;
-  border-radius: 10px;
-  margin-top: 20px;
-  padding: 10px;
+  right: -50px;
+  bottom: 17px;
 }
 
-.dropdown-content>header>span {
+.style-button {
+  opacity: 0.8;
+  padding: 15px 25px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.left-pad-0 {
+  padding-left: 0;
+}
+.right-pad-0 {
+  padding-right: 0;
+}
+
+/* COMMON CLASSES*/
+nav {
+  justify-content: space-between;
+  max-width: 86rem;
+  margin: 0 auto;
+  position: relative;
   background-color: inherit;
-  color: #CED5DB;
-  font-weight: bold;
-}
-
-.dropdown-content {
-  display: flex;
-  height: 80%;
-}
-
-.icon-container {
-  display: inline-block;
-  width: 25px;
-  padding: 3px;
-  margin: 5px;
-  background-color: #CED5DB;
-  border-radius: 50%;
   color: inherit;
+  padding: 3rem 0;
 }
 
-.icon-container>img {
+nav li {
+  padding: 10px 0;
+  padding-right: 25px;
+}
+
+nav li a {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+nav li a:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+nav img {
   vertical-align: middle;
   filter: invert(1);
 }
 
-header>span {
-  text-transform: uppercase;
-  font-size: 0.7em;
+.logo {
+  margin-right: 5px;
+  filter: invert(0);
+  height: 30px;
+  vertical-align: middle;
 }
 
-section>a, section>div>a {
-  line-height: 2.5em;
+.top-pad-5 {
+  padding-top: 5px;
 }
 
-.dropdown-container-small, .dropdown-container-about, .dropdown-container-help {
-  display: none;
+
+.login-button {
+  background-color: #CED5DB;
+  color: inherit;
+}
+
+.login-button:hover, .app-download:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.app-download {
+  background-color: #111;
+  color: #fff;
+}
+
+.dropdown-menu {
   position: absolute;
-  width: 170px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 4px 0px, rgba(0, 0, 0, 0.09) 0px 8px 16px 0px;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 15px;
   margin-top: 20px;
+  padding: 20px;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 4px 0px, rgba(0, 0, 0, 0.09) 0px 8px 16px 0px;
+}
+
+.right {
+  right: 0;
+}
+
+.active {
+  display: flex;
+}
+
+.dropdown-menu .dropdown-title {
+  color: #CED5DB;
+  background-color: inherit;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.dropdown-menu .dropdown-title .dropdown-title-img {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #CED5DB;
+  display: inline-block;
+  margin-right: 5px;
+  color: inherit;
+}
+
+.dropdown-menu .dropdown-title .dropdown-title-img img {
+  width: 18px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  left: 0;
 }

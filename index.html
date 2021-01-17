@@ -4,203 +4,149 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/script.js" charset="utf-8"></script>
+  <link rel="shortcut icon" href="img/logo.svg">
   <title>Revolut</title>
 </head>
 
 <body>
-  <nav>
-    <div class="navbar">
 
-      <div class="left">
-        <a href="#" class="active-opacity">Personal</a>
-        <a href="#">Business</a>
-      </div>
+  <nav class="flex">
+    <!-- NAVBAR LEFT -->
+    <ul class="flex">
+      <li class="top-pad-5"><img src="img/logo.svg" class="logo" alt=""></li>
+      <li class="text-bold "><a href="#">Personal</a></li>
+      <li><a href="#">Business</a></li>
+    </ul>
+    <!-- END NAVBAR LEFT -->
 
-      <div class="container-right">
-        <!-- FEATURES MACRO SECTION -->
-        <div class="features">
-          <a href="#">Features</a>
-          <div class="dropdown-container">
-            <div class="dropdown-content">
 
-              <!-- ACCOUNT SECTION -->
-              <div class="features-content">
-                <header>
-                  <div class="icon-container">
-                    <img src="img/Revolut-2.svg" alt="">
-                  </div>
-                  <span>Account</span>
-                </header>
-                <section>
-                  <div>
-                    <a href="#">Budget & Analytics</a>
-                  </div>
-                  <div>
-                    <a href="#">Cards</a>
-                  </div>
-                  <div>
-                    <a href="#">Junior account</a>
-                  </div>
-                  <div>
-                    <a href="#">Pockets</a>
-                  </div>
-                </section>
+    <!-- NAVBAR RIGHT -->
+    <ul class="flex container">
+      <!-- FEATURES MACRO SECTION -->
+      <li class="dropdown">
+        <a href="#">Features</a>
+        <div class="dropdown-menu right flex">
+          <ul>
+            <li class="dropdown-title text-bold text-uppercase ">
+              <div class="dropdown-title-img">
+                <img src="img/Revolut-2.svg" alt="bank icon">
               </div>
-              <!-- END ACCOUNT SECTION -->
+              account
+            </li>
+            <li><a href="#">Budget & Analytics</a></li>
+            <li><a href="#">Cards</a></li>
+            <li><a href="#">Junior account</a></li>
+            <li><a href="#">Pockets</a></li>
+          </ul>
 
-              <!-- WEALTH SECTION -->
-              <div class="features-content">
-                <header>
-                  <div class="icon-container">
-                    <img src="img/Revolut-3.svg" alt="">
-                  </div>
-                  <span>Account</span>
-                </header>
-                <section>
-                  <div>
-                    <a href="#">Budget & Analytics</a>
-                  </div>
-                  <div>
-                    <a href="#">Cards</a>
-                  </div>
-                  <div>
-                    <a href="#">Junior account</a>
-                  </div>
-                  <div>
-                    <a href="#">Pockets</a>
-                  </div>
-                </section>
+          <ul>
+            <li class="dropdown-title text-bold text-uppercase ">
+              <div class="dropdown-title-img">
+                <img src="img/Revolut-3.svg" alt="investimenti">
               </div>
-              <!-- END WEALTH SECTION -->
+              wealth
+            </li>
+            <li><a href="#">Crypto</a></li>
+            <li><a href="#">Commodities</a></li>
+            <li><a href="#">Vaults</a></li>
+            <li class="special-li">
+              <div class="coming-soon text-uppercase">coming soon</div>
+              <a href="#" class="extra-opacity">Saving Vaults</a>
+            </li>
+          </ul>
 
-              <!-- PAYMENTS SECTION -->
-              <div class="features-content">
-                <header>
-                  <div class="icon-container">
-                    <img src="img/Revolut-4.svg" alt="">
-                  </div>
-                  <span>Account</span>
-                </header>
-                <section>
-                  <div>
-                    <a href="#">Budget & Analytics</a>
-                  </div>
-                  <div>
-                    <a href="#">Cards</a>
-                  </div>
-                  <div>
-                    <a href="#">Junior account</a>
-                  </div>
-                  <div>
-                    <a href="#">Pockets</a>
-                  </div>
-                </section>
+          <ul>
+            <li class="dropdown-title text-bold text-uppercase ">
+              <div class="dropdown-title-img">
+                <img src="img/Revolut-4.svg" alt="pagamenti">
               </div>
-              <!-- END PAYMENTS SECTION -->
+              payments
+            </li>
+            <li><a href="#">Money transfers</a></li>
+            <li><a href="#">Group bills</a></li>
+            <li><a href="#">Subscriptions</a></li>
+          </ul>
 
-              <!-- EXTRAS SECTION -->
-              <div class="features-content">
-                <header>
-                  <div class="icon-container">
-                    <img src="img/Revolut-5.svg" alt="">
-                  </div>
-                  <span>Account</span>
-                </header>
-                <section>
-                  <div>
-                    <a href="#">Budget & Analytics</a>
-                  </div>
-                  <div>
-                    <a href="#">Cards</a>
-                  </div>
-                  <div>
-                    <a href="#">Junior account</a>
-                  </div>
-                  <div>
-                    <a href="#">Pockets</a>
-                  </div>
-                </section>
+          <ul>
+            <li class="dropdown-title text-bold text-uppercase ">
+              <div class="dropdown-title-img">
+                <img src="img/Revolut-5.svg" alt="extra">
               </div>
-              <!-- END EXTRAS SECTION -->
-
-            </div>
-          </div>
+              extras
+            </li>
+            <li><a href="#">Donations</a></li>
+            <li><a href="#">Overseas insurance</a></li>
+            <li><a href="#">Device insurance</a></li>
+            <li><a href="#">Safety</a></li>
+            <li class="special-li">
+              <div class="coming-soon text-uppercase">coming soon</div>
+              <a href="#" class="extra-opacity">Rewards</a>
+            </li>
+          </ul>
         </div>
-        <!-- FEATURES MACRO SECTION -->
+      </li>
+      <!-- END FEATURES MACRO SECTION -->
 
-        <!-- PLANS MACRO SECTION -->
-        <div class="plans">
-
-          <a href="#">Plans</a>
-          <div class="dropdown-container-small">
-            <div class="dropdown-content">
-
-              <section>
-                <a href="#">Standard</a>
-                <a href="#">Plus</a>
-                <a href="#">Premium</a>
-                <a href="#">Metal</a>
-                <a href="#">Compare plans</a>
-              </section>
-
-            </div>
-
-          </div>
-
+      <!-- PLANS MACRO SECTION -->
+      <li class="dropdown relative">
+        <a href="#">Plans</a>
+        <div class="dropdown-menu absolute flex">
+         <ul>
+            <li><a href="#">Standard</a></li>
+            <li><a href="#">Plus</a></li>
+            <li><a href="#">Premium</a></li>
+            <li><a href="#">Metal</a></li>
+            <li ><a href="#">Compare plans</a></li>
+          </ul>
         </div>
-        <!-- PLANS MACRO SECTION -->
+      </li>
+      <!-- END PLANS MACRO SECTION -->
 
-        <!-- ABOUT US MACRO SECTION -->
-        <div class="about">
-          <a href="#">About us</a>
-
-          <div class="dropdown-container-about">
-            <div class="dropdown-content">
-
-              <section>
-                <a href="#">Standard</a>
-                <a href="#">Plus</a>
-                <a href="#">Premium</a>
-                <a href="#">Metal</a>
-                <a href="#">Compare plans</a>
-              </section>
-
-            </div>
-
-          </div>
-
+      <!-- END ABOUT US MACRO SECTION -->
+      <li class="dropdown relative">
+        <a href="#">About us</a>
+        <div class="dropdown-menu absolute flex">
+         <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Influencers</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Diversity & Inclusion</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-        <!-- END ABOUT US MACRO SECTION -->
+      </li>
+      <!-- ABOUT US MACRO SECTION -->
 
-        <!-- HELP MACRO SECTION -->
-        <div class="help">
-          <a href="#">Help</a>
-          <div class="dropdown-container-help">
-            <div class="dropdown-content">
-
-              <section>
-                <a href="#">Standard</a>
-                <a href="#">Plus</a>
-                <a href="#">Premium</a>
-                <a href="#">Metal</a>
-                <a href="#">Compare plans</a>
-              </section>
-
-            </div>
-
-          </div>
-
+      <!-- HELP MACRO SECTION -->
+      <li class="dropdown relative">
+        <a href="#">Help</a>
+        <div class="dropdown-menu absolute flex">
+         <ul>
+            <li><a href="#">Help centre</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">System Status</a></li>
+            <li><a href="#">Developer APIs</a></li>
+          </ul>
         </div>
-        <!-- END HELP MACRO SECTION -->
-        <button type="button" name="button">Sign in</button>
-        <button type="button" name="button">Get the App</button>
-      </div>
+      </li>
+      <!-- END HELP MACRO SECTION -->
 
+      <!-- BUTTONS -->
+      <li class="left-pad-0"><a href="#" class="login-button style-button text-bold">Login</a></li>
+      <li class="right-pad-0 left-pad-0"><a href="#" class="app-download style-button text-bold">Get the App</a></li>
+      <!-- END BUTTONS -->
 
-    </div>
-
+    </ul>
+    <!-- END NAVBAR RIGHT -->
   </nav>
 
 </body>
